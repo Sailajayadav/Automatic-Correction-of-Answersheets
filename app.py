@@ -43,7 +43,6 @@ cross_encoder_tokenizer = AutoTokenizer.from_pretrained("cross-encoder/stsb-robe
 # Directory to save uploaded files
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
 # Storage for teacher answers
 teacher_answers = {}  # {page_number: text}
 
