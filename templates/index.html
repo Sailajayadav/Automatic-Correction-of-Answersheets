@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>PDF Answer Comparison</title>
+
 </head>
 <body>
     <h1>Upload PDFs</h1>
-
     <!-- Upload Teacher PDF -->
     <h2>Upload Teacher Answers</h2>
     <form action="/upload/teacher" method="POST" enctype="multipart/form-data">
         <input type="file" name="pdf" required>
         <button type="submit">Upload</button>
     </form>
-
     <br><br>
-
     <!-- Upload Student PDF -->
     <h2>Upload Student Answers</h2>
     <form action="/upload/student" method="POST" enctype="multipart/form-data">
